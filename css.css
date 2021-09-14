@@ -1,0 +1,383 @@
+@font-face{
+	font-family: 'japon';
+	src:url('font-japon/Japanese Robot.otf') format('truetype');
+}
+
+@keyframes floating-scolaire { 
+    0% { transform: translate(0, 0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+@keyframes floating-passion { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 20px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+@keyframes floating-informatique { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 10px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+@keyframes floating-projets { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 18px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+@keyframes floating-experience { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 22px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+@keyframes closed_3dprint { 
+    0% { height: 750px }
+    100%   { height: 0px }   
+}
+@keyframes open_3dprint { 
+    0% { height: 0px }
+    100%   { height: 750px }   
+}
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	/*background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+	*/
+	background-color: #282828;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color:white;
+	font-family: japon;
+	align-content: space-around;
+}
+
+
+.en-tete{
+	display: flex
+}
+
+.profil{
+	float: left;
+	z-index: 8;
+	border-radius: 50%;
+	margin-left: 80px;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 0px 100px rgba(157,173,157, 1);
+}
+
+.name{
+	color:rgb(51,161,206);
+	text-shadow:  0 0px 100px rgba(256,256,256, 1);
+	border: thick double #32a1ce;
+	display: inline-block;
+	font-size: 5em;
+	float:left;
+	margin-left: 250px;
+	border-radius: 20px;
+	box-shadow: 0 0px 100px rgba(51,161,206, 0.8);
+}
+
+
+
+.titre_bienvenue{
+	text-shadow: 2px 2px 4px black;
+	text-align: center;
+	font-size: 30px;
+}
+
+/*.sommaire{
+	z-index: 2;
+	background-color: #1daef1;
+	height: auto;
+	width : 200px;
+	position: -webkit-sticky;
+	position: sticky;
+	margin-top: 250px;
+	margin-left: 10px;
+	display: block;
+    float: left;
+}*/
+
+.activiter{
+	
+	animation-play-state:running;
+
+}
+.acte1{
+	display: flex;
+	justify-content: space-around;
+}
+.acte2{
+	display: flex;
+	justify-content: space-around;
+}
+
+.titre{
+	position: relative;
+	margin-top: 0px;
+}
+
+.glass{
+	/*display: inline-block;
+	position: absolute;*/
+	border-radius: 20px;
+	padding: 50px;
+	background-color: rgba(0,0,0,0.12);
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: cursive;
+	/*max-width: 220px;
+	max-height: auto;*/
+}
+.glass:hover{
+	animation-play-state:paused;
+}
+
+.overlay{
+	position: absolute;
+ 	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #474747;
+	border-radius: 10%;
+	border: outset #f33;
+}
+
+/*.contact{
+	box-shadow: 0 22px 40px rgba(96,63,227, 0.5);
+	margin-left: 200px;
+}
+.contact:hover .overlay {
+	opacity: 1;
+	transform: scale(1.5); 
+	z-index: 2;
+	border: outset rgb(96,63,227);
+}
+.list_contact{
+	list-style: none;
+	text-align: left;
+}*/
+
+.scolaire{
+	/*margin-left: 550px;*/
+	box-shadow: 0 22px 40px rgba(241,45,45, 0.5);
+	animation-name: floating-scolaire;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+.scolaire:hover .overlay {
+	opacity: 1;
+	transform: scale(1.5); 
+	z-index: 2;
+	border: outset rgb(241,45,45);
+
+}
+.list_scolaire{
+	text-align: left;
+	font-size: 90%;
+}
+.niv_lg{
+	text-align: center;
+	margin-right: 30px;
+}
+
+.passion{
+	/*margin-left: 1100px;*/
+	height: 100%;
+	box-shadow: 0 22px 40px rgba(255,205,77, 0.5);
+	animation-name: floating-passion; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+
+}
+.passion:hover .overlay {
+	opacity: 1;
+	transform: scale(1.5); 
+	z-index: 2;
+	border: outset rgb(255,205,77);
+	display: inline-block;
+}
+.list_Passion{
+	text-align: left;
+	font-size: 80%;
+}
+
+
+.informatique{
+	/*margin-top: 300px;
+	margin-left: 300px;*/
+	margin-top: 10%;
+	box-shadow: 0 22px 40px rgba(234,48,215, 0.5);
+	animation-name: floating-informatique; 
+    animation-duration: 3.5s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+.informatique:hover .overlay {
+	opacity: 1;
+	transform: scale(1.5); 
+	z-index: 2;
+	border: outset rgb(234,48,215);
+}
+.list_Informatique{
+	text-align: left;
+	margin-top: 50px;
+	font-size: 95%;
+}
+
+.projet{
+	/*margin-top: 300px;
+	margin-left: 850px;	*/
+	margin-top: 10%;
+	box-shadow: 0 22px 40px rgba(76,237,57, 0.5);
+	animation-name: floating-projets; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+.projet:hover .overlay {
+	opacity: 1;
+	transform: scale(1.5); 
+	z-index: 2;
+	border: outset rgb(76,237,57);
+}
+.list_projet{
+	font-size: 90%;
+	text-align: left;
+}
+
+.experience{
+	/*margin-top: 300px;
+	margin-left: 1350px;*/
+	height: 100%;
+	margin-top: 10%;
+	box-shadow: 0 22px 40px rgba(48,215,234, 0.5);
+	animation-name: floating-experience; 
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+.experience:hover .overlay {
+	opacity: 1;
+	transform: scale(1.5); 
+	z-index: 2;
+	border: outset rgb(48,215,234);
+}
+.list_exp{
+	text-align: left;
+	font-size: 95%;
+}
+.text_scenik{
+	float: left;
+}
+.img_scenik{
+	width: 30%;
+	height: 30%;
+	float: right;
+	margin-right: 20px;
+}
+
+.Portfolio{
+	padding-top: 10%;
+}
+.projet_perso{
+	text-align: center;
+	background: radial-gradient(circle, rgba(76,237,57, 0.5) 22%, rgba(252,70,107,0) 100%);
+}
+.sous-chapitre{
+	font-family: cursive;
+	display: flex;
+	/*background: linear-gradient(163deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 61%, rgba(0,212,255,1) 100%);*/
+	background: rgba(9,9,121,1) 61%;
+}
+
+.container {
+  display: block;
+  cursor: pointer;
+}
+.all_bar{
+	padding-top: 40%;
+}
+.bar1, .bar2, .bar3 {
+
+  width: 35px;
+  height: 5px;
+  background-color: #cbe1ea ;/*#333*/
+  margin: 6px;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-10deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.chap_print{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.overflow {
+	animation: open_3dprint 1s forwards;
+	box-shadow: 0 0px 100px rgba(255,255,255, 0.5);
+	width: 100%;
+	height: 750px;
+	margin-top: 1px;
+	overflow-y: scroll;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column {
+	flex: 50%;
+	max-width: 25%;
+}
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 98%;
+}
+.changeflow {
+    animation: closed_3dprint 1s forwards;
+}
+
+
+.logi_python{
+	font-family: Arial Narrow;
+	list-style: circle;
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+	font-family: Arial Narrow;
+}
+.list_contact{
+	list-style-type:none;
+}
+.logo{
+	width: 30px;
+	height: 30px;
+}
+.yey___design{
+	color: white;
+}
