@@ -72,7 +72,7 @@ body{
 	text-shadow:  0 0px 100px rgba(256,256,256, 1);
 	border: thick double #32a1ce;
 	display: inline-block;
-	font-size: 40%;
+	font-size: 100%;
 	float:left;
 	margin-left: 250px;
 	border-radius: 20px;
