@@ -1,6 +1,6 @@
 @font-face{
 	font-family: 'japon';
-	src:url('Japanese Robot.otf') format('truetype');
+	src:url('./font-japon/Japanese Robot.otf') format('truetype');
 }
 
 @keyframes floating-scolaire { 
