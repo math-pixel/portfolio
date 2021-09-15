@@ -361,13 +361,6 @@ body{
 
 
 
-
-
-
-
-
-
-
 .footer{
 	font-family: Arial Narrow;
 }
@@ -380,4 +373,40 @@ body{
 }
 .yey___design{
 	color: white;
+}
+
+
+@media (max-width: 400px){
+	.acte1{
+		width: 90%;
+		flex-direction: column;
+	}
+	.acte2{
+		width: 90%;
+		flex-direction: column;
+	}
+
+	.en-tete{
+		flex-direction: column;
+	}
+	.name{
+		
+		font-size: 2em;
+		margin: 0;
+	}
+	.scolaire:hover .overlay{
+		transform: scale(1);
+	}
+	.passion:hover .overlay{
+		transform: scale(1);
+	}
+	.informatique:hover .overlay{
+		transform: scale(1);
+	}
+	.projet:hover .overlay{
+		transform: scale(1);
+	}
+	.experience:hover .overlay{
+		transform: scale(1);
+	}
 }
