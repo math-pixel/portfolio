@@ -1,6 +1,6 @@
 @font-face{
 	font-family: 'japon';
-	src:url('./font-japon/Japanese Robot.otf') format('truetype');
+	src:url('font-japon/Japanese Robot.otf') format('truetype');
 }
 
 @keyframes floating-scolaire { 
@@ -287,10 +287,24 @@ body{
 .Portfolio{
 	padding-top: 10%;
 }
-.projet_perso{
+.port_passion{
 	text-align: center;
-	background: radial-gradient(circle, rgba(76,237,57, 0.5) 22%, rgba(252,70,107,0) 100%);
+	background: radial-gradient(circle, rgb(255,205,77, 0.9) 22%, rgba(252,70,107,0) 100%);
 }
+.port_informatique{
+	text-align: center;
+	background: radial-gradient(circle, rgb(234,48,215, 0.9) 22%, rgba(252,70,107,0) 100%);
+}
+.port_perso{
+	text-align: center;
+	background: radial-gradient(circle, rgba(76,237,57, 0.9) 22%, rgba(252,70,107,0) 100%);
+}
+.port_xp{
+	text-align: center;
+	background: radial-gradient(circle, rgb(48,215,234, 0.9) 22%, rgba(252,70,107,0) 100%);
+}
+
+
 .sous-chapitre{
 	font-family: cursive;
 	display: flex;
@@ -358,6 +372,13 @@ body{
 	font-family: Arial Narrow;
 	list-style: circle;
 }
+
+
+
+
+
+
+
 
 
 
