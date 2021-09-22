@@ -1,6 +1,6 @@
 @font-face{
 	font-family: 'japon';
-	src:url('font-japon/Japanese Robot.otf') format('truetype');
+	src:url('font-japon/Axis_Extrabold.otf') format('truetype');
 }
 
 @keyframes floating-scolaire { 
@@ -77,6 +77,8 @@ body{
 	margin-left: 250px;
 	border-radius: 20px;
 	box-shadow: 0 0px 100px rgba(51,161,206, 0.8);
+	padding-right: 2%;
+	padding-left: 2%;
 }
 
 
@@ -291,14 +293,60 @@ body{
 	text-align: center;
 	background: radial-gradient(circle, rgb(255,205,77, 0.9) 22%, rgba(252,70,107,0) 100%);
 }
+.passion_text{
+	text-align: center;
+	font-family: cursive;
+	font-size: 2em;
+}
+
 .port_informatique{
 	text-align: center;
 	background: radial-gradient(circle, rgb(234,48,215, 0.9) 22%, rgba(252,70,107,0) 100%);
 }
+.progress_python{
+	width: 100%;
+	background-color: #494949;
+	height: 1.5em;
+	border-radius: 55px;
+}
+.progress_python2{
+	width: 60%;
+	height: 100%;
+	background-color: #C70039;
+	border-radius: 55px;
+}
+.progress_html{
+	width: 100%;
+	background-color: #494949;
+	height: 1.5em;
+	border-radius: 55px;
+}
+.progress_html2{
+	width: 40%;
+	height: 100%;
+	background-color: #900C3F;
+	border-radius: 55px;
+}
+.progress_c{
+	width: 100%;
+	background-color: #494949;
+	height: 1.5em;
+	border-radius: 55px;
+}
+.progress_c2{
+	width: 20%;
+	height: 100%;
+	background-color: #581845;
+	border-radius: 55px;
+}
+
+
+
 .port_perso{
 	text-align: center;
 	background: radial-gradient(circle, rgba(76,237,57, 0.9) 22%, rgba(252,70,107,0) 100%);
 }
+
 .port_xp{
 	text-align: center;
 	background: radial-gradient(circle, rgb(48,215,234, 0.9) 22%, rgba(252,70,107,0) 100%);
