@@ -339,7 +339,9 @@ body{
 	background-color: #581845;
 	border-radius: 55px;
 }
-
+.lvl_prog{
+	padding: 100px;
+}
 
 
 .port_perso{
@@ -477,5 +479,9 @@ body{
 	}
 	.experience:hover .overlay{
 		transform: scale(1);
+	}
+
+	.lvl_prog{
+		padding: 50px;
 	}
 }
