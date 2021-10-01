@@ -40,6 +40,12 @@
     0% { height: 0px }
     100%   { height: 750px }   
 }
+@keyframes fade {
+  0%,100%{opacity: 0}
+  40%,60%{opacity: 1}
+}
+
+
 
 html{
 	scroll-behavior: smooth;
@@ -374,8 +380,7 @@ body{
 .img_slide{
 	width: auto;
 	height: 100%;
-	max-width: 1000px;
-	
+	max-width: 1000px;	
 }
 
 /* Caption text */
@@ -401,21 +406,10 @@ body{
 }
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 4s;
 }
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-
 
 
 
@@ -498,11 +492,6 @@ body{
 
 
 
-
-
-
-
-
 .footer{
 	font-family: Arial Narrow;
 }
@@ -554,5 +543,17 @@ body{
 
 	.lvl_prog{
 		padding: 50px;
+	}
+
+	.mySlides {
+	  display: none;
+	  height: 300px;
+	  width: auto;
+	  text-align: center;
+	}
+	.img_slide{
+		width: auto;
+		height: 100%;
+		max-width: 300px;	
 	}
 }
