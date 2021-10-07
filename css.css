@@ -47,6 +47,8 @@
 
 
 
+
+
 html{
 	scroll-behavior: smooth;
 }
@@ -487,9 +489,25 @@ body{
 	font-family: Arial Narrow;
 	list-style: circle;
 }
+.exp {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
 
+}
+.exp h4{
+	text-align: center;
+    line-height: 15px;
+    max-width: 150px;
 
-
+	margin: 10px;
+}
+.exp h4:hover{
+	border-bottom: thick double #32a1ce;
+}
+.exp div{
+	text-align: center;
+} 
 
 
 .footer{
@@ -499,8 +517,9 @@ body{
 	list-style-type:none;
 }
 .logo{
-	width: 30px;
-	height: 30px;
+	max-width: 30px;
+	max-height: 30px;
+	border-radius: 30%;
 }
 .yey___design{
 	color: white;
@@ -555,5 +574,10 @@ body{
 		width: auto;
 		height: 100%;
 		max-width: 300px;	
+	}
+	.exp{
+		height: auto;
+		margin: auto;
+		flex-flow: column wrap;
 	}
 }
