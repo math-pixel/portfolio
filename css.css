@@ -67,7 +67,12 @@ body{
 a:visited{
 	color: white;
 }
-
+a:link{
+	color: white;
+}
+a:hover {
+  color: #b14eed;
+}
 
 .en-tete{
 	display: flex
