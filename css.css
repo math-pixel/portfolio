@@ -64,6 +64,10 @@ body{
 	align-content: space-around;
 }
 
+a:visited{
+	color: white;
+}
+
 
 .en-tete{
 	display: flex
@@ -356,6 +360,17 @@ body{
 	padding: 100px;
 }
 
+.prog{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+.prog a{
+	margin: 10px;
+}
+
 
 
 
@@ -495,6 +510,24 @@ body{
 	text-align: center;
 
 }
+.stage{
+	animation-name: floating-scolaire;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+.obj{
+	animation-name: floating-experience;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
+.int{
+	animation-name: floating-passion;
+    animation-duration: 4s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+}
 .exp h4{
 	text-align: center;
     line-height: 15px;
@@ -502,12 +535,12 @@ body{
 
 	margin: 10px;
 }
-.exp h4:hover{
-	border-bottom: thick double #32a1ce;
-}
 .exp div{
 	text-align: center;
-} 
+}
+.exp a:visited{
+	text-decoration-color: none;
+}
 
 
 .footer{
