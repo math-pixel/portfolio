@@ -1,0 +1,20 @@
+@font-face{
+	font-family: 'japon';
+	src:url('font-japon/Axis_Extrabold.otf') format('truetype');
+}
+
+body{
+	background-color: #282828;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color:white;
+	font-family: japon;
+	align-content: space-around;
+}
+
+.title{
+	text-shadow: 2px 2px 4px black;
+	text-align: center;
+	font-size: 30px;
+}
