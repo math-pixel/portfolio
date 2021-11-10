@@ -11,10 +11,32 @@ body{
 	color:white;
 	font-family: japon;
 	align-content: space-around;
+	text-align: center;
 }
 
 .title{
 	text-shadow: 2px 2px 4px black;
-	text-align: center;
 	font-size: 30px;
+}
+
+video{
+	box-shadow: 0px 0px 50px white;
+	z-index: 0;
+}
+h3{
+	margin: 5% auto;
+	max-width: 50%;
+}
+
+.ecart{
+	margin: auto;
+	background-color: #b14eed; /* #ed4eda #ed4e8a #ed614e #edb14e #daed4e*/
+	height: 10px;
+	width: 50%;
+	border-radius: 30%;
+}
+
+.description{
+	justify-content: space-around;
+	display: flex;
 }
