@@ -19,9 +19,11 @@ body{
 	font-size: 30px;
 }
 
-video{
-	box-shadow: 0px 0px 50px white;
+iframe{
+	box-shadow: 0px 0px 10px #b14eed;
 	z-index: 0;
+	width: 60%;
+	height: 60%;
 }
 h3{
 	margin: 5% auto;
