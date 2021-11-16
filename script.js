@@ -1,6 +1,9 @@
 var slideIndex = 0;
 showSlides();
 
+
+alert("Pour une meilleure experience utilisé le navigateur Chrome !!!")
+
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
