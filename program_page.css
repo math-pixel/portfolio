@@ -4,7 +4,8 @@
 }
 
 body{
-	background-color: #282828;
+	/*background-color: #282828;*/
+	background-image: url("./image/wp.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -20,22 +21,54 @@ body{
 }
 
 iframe{
-	box-shadow: 0px 0px 10px #b14eed;
+	/*box-shadow: 0px 0px 10px #b14eed;*/
 	z-index: 0;
-	width: 60%;
+	width: 90%;
 	height: 60%;
+}
+img{
+	/*box-shadow: 0px 0px 10px #b14eed;*/
+	z-index: 0;
+	width: 90%;
+	height: 60%;
+}
+img:hover{
+	transform: scale(1.5);
+	transition: .3s ease;
+	transition: .3s ease-in;
+
+}
+h2{
+	
+	background: linear-gradient(320deg,#f27121,#e94057,#8a2387);
 }
 h3{
 	margin: 5% auto;
 	max-width: 50%;
+	text-shadow: 2px 2px 4px black;
 }
 
-.ecart{
+.page{
 	margin: auto;
-	background-color: #b14eed; /* #ed4eda #ed4e8a #ed614e #edb14e #daed4e*/
+	background: rgba(255, 255, 255, 0.19);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(8.1px);
+	-webkit-backdrop-filter: blur(8.1px);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	width: 50%;
+	
+}
+
+.aecart{
+	/*margin: auto;
+	background-color: #b14eed;  /*#ed4eda #ed4e8a #ed614e #edb14e #daed4e
+	*/
 	height: 10px;
 	width: 50%;
-	border-radius: 30%;
+	border-radius: 10%;
+	margin: auto;
+	border-top: 2px solid #FFF; 
 }
 
 .description{
