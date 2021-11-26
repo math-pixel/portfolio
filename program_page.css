@@ -39,7 +39,7 @@ img:hover{
 
 }
 h2{
-	
+	text-shadow: 1px 1px 2px black;
 	background: linear-gradient(320deg,#f27121,#e94057,#8a2387);
 }
 h3{
@@ -47,7 +47,13 @@ h3{
 	max-width: 90%;
 	text-shadow: 2px 2px 4px black;
 }
-
+h4{
+	margin: auto;
+	width: 20%;
+	border-radius: 30px;
+	background: radial-gradient(circle, rgba(241,39,17,1) 40%, rgba(245,175,25,1) 100%);
+	text-shadow: 1px 1px 2px black;
+}
 .page{
 	margin: auto;
 	background: rgba(255, 255, 255, 0.19);
